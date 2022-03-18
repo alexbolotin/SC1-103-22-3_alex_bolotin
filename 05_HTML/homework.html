@@ -22,9 +22,9 @@
     </ul>
 
 
-<table border="1" id="table_1">
+<table id="table_1">
 <tr>
-    <td>
+    <td valign="top">
         <form action="https://fe.it-academy.by/TestForm.php" method="post">
         <h3>Простая форма поиска с вариантами:</h3>
         <fieldset>
@@ -39,7 +39,7 @@
     </form>
     </td>
 
-    <td>
+    <td valign="top">
         <form action="https://fe.it-academy.by/TestForm.php" method="post">
         <h3>Простая форма поиска с вариантами:</h3>
         <fieldset>
@@ -57,7 +57,7 @@
  </tr>
 
 <tr>
-    <td>
+    <td valign="top">
         <h3>Простая форма авторизации:</h3>
         <form action="https://fe.it-academy.by/TestForm.php" method="post">
         <fieldset>
@@ -74,29 +74,33 @@
     </td>
 
 
-    <td>
+    <td valign="top">
         <form action="https://fe.it-academy.by/TestForm.php" method="post">
         <h3>Опрос(голосование):</h3>
-        <input type="radio" name="quiz[]" value="ничего"> Ничего<br>
-        <input type="radio" name="quiz[]" value="неплохо"> Неплохо<br>
-        <input type="radio" name="quiz[]" value="хорошо"> Хорошо<br>
-        <input type="radio" name="quiz[]" value="супер"> Супер<br>
-        <input type="hidden" name="date" value="18/03/2022">
-        <button>Отправить</button>
+        <fieldset>
+            <legend>Как Вам?</legend>
+            <input type="radio" name="quiz[]" value="ничего"> Ничего<br>
+            <input type="radio" name="quiz[]" value="неплохо"> Неплохо<br>
+            <input type="radio" name="quiz[]" value="хорошо"> Хорошо<br>
+            <input type="radio" name="quiz[]" value="супер"> Супер<br>
+            <input type="hidden" name="date" value="18/03/2022">
+            <button>Отправить</button>
+           
+        </fieldset>
         </form> 
     </td>
 
 </tr>
 
 <tr>
-    <td>
+    <td valign="top">
         <h3>Отзыв:</h3>
         <form action="https://fe.it-academy.by/TestForm.php" method="post">
         <fieldset>
             <legend>Оставьте ваш отзыв</legend>
             <input TYPE="text" NAME="Name" required>*Имя
             <input TYPE="text" NAME="e-mail" required>*e-mail<br>
-            <textarea name="comment" cols="5" rows="5 "></textarea>
+            <textarea name="comment" cols="18" rows="3"></textarea>
             <button>Войти</button>
             <br>
             <p><i>* - обязательное поле</i></p> 
@@ -104,7 +108,7 @@
         </form>
     </td>
 
-    <td>
+    <td valign="top">
         <h3>Выпадающий и мульти списки:</h3>
         <form action="https://fe.it-academy.by/TestForm.php" method="post">
         <fieldset>
@@ -138,7 +142,7 @@
 </tr>
 
 <tr>
-    <td>
+    <td valign="top">
         <h3>Загрузка файла на сервер:</h3>
         <form action="https://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
             <fieldset>
@@ -153,7 +157,7 @@
         </form>
     </td>
 
-    <td>
+    <td valign="top">
         <h3>Валидация данных HTML5:</h3>
         <form action="https://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
             <fieldset>
