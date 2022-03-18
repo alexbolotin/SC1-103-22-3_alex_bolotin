@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       #table_1{table-layout: fixed;
+    width:700px;
+    }
+    </style>
+    <title>Document</title>
+
+</head>
+<body>
+    <h3><i>Рекомендации к выполнению работы:</i></h3>
+    <ul>
+        <li><i>Все эти формы размещены в таблице, шириной 700px, 4 строки х 2 столбца</i></li>
+        <li><i>Каждая форма должна правильно заполненные атрибуты name, method и action.</i></li>
+        <li><i>Для атрибута action, воспользуйтесь значением "http://sc.it-academy.by/fe/form.php" - <br>небольшой
+            скрипт показывающий переменные переданные методами post и get.</i></li>
+    </ul>
+
+
+<table border="1" id="table_1">
+<tr>
+    <td>
+        <form action="https://fe.it-academy.by/TestForm.php" method="post">
+        <h3>Простая форма поиска с вариантами:</h3>
+        <fieldset>
+            <legend>Строка поиска</legend>
+            <input type="search" name="search[]" value="" maxlength="10">
+            <button>Искать</button>
+            <br>
+            <input type="radio" name="watch_on" value="на сайте"> на сайте
+            <input type="radio" name="watch_on" value="в google"> в google
+            <p><i>Длина запроса не более 10 символов</i></p> 
+        </fieldset>
+    </form>
+    </td>
+
+    <td>
+        <form action="https://fe.it-academy.by/TestForm.php" method="post">
+        <h3>Простая форма поиска с вариантами:</h3>
+        <fieldset>
+            <legend>Строка поиска</legend>
+            <input type="search" name="search[]" value="" required maxlength="10"> *
+            <button>Искать</button>
+            <br>
+            <input type="radio" name="watch_on" value="на сайте"> на сайте
+            <input type="radio" name="watch_on" value="в google"> в google
+            <p><i>* - обязательное поле <br>
+                Автофокус в поле поиска</i></p> 
+        </fieldset>
+    </form>
+    </td>
+ </tr>
+
+<tr>
+    <td>
+        <h3>Простая форма авторизации:</h3>
+        <form action="https://fe.it-academy.by/TestForm.php" method="post">
+        <fieldset>
+            <legend>Авторизируйтесь</legend>
+            <input type="text" NAME="login" required>*Логин
+            <input type="text" NAME="password" required>*Пароль 
+            <br>
+            <input type="checkbox" name="stay_in"> Оставаться в системе <br>
+            <button>Войти</button>
+            <br>
+            <p><i>* - обязательное поле</i></p> 
+        </fieldset>
+        </form>
+    </td>
+
+
+    <td>
+        <form action="https://fe.it-academy.by/TestForm.php" method="post">
+        <h3>Опрос(голосование):</h3>
+        <input type="radio" name="quiz[]" value="ничего"> Ничего<br>
+        <input type="radio" name="quiz[]" value="неплохо"> Неплохо<br>
+        <input type="radio" name="quiz[]" value="хорошо"> Хорошо<br>
+        <input type="radio" name="quiz[]" value="супер"> Супер<br>
+        <input type="hidden" name="date" value="18/03/2022">
+        <button>Отправить</button>
+        </form> 
+    </td>
+
+</tr>
+
+<tr>
+    <td>
+        <h3>Отзыв:</h3>
+        <form action="https://fe.it-academy.by/TestForm.php" method="post">
+        <fieldset>
+            <legend>Оставьте ваш отзыв</legend>
+            <input TYPE="text" NAME="Name" required>*Имя
+            <input TYPE="text" NAME="e-mail" required>*e-mail<br>
+            <textarea name="comment" cols="5" rows="5 "></textarea>
+            <button>Войти</button>
+            <br>
+            <p><i>* - обязательное поле</i></p> 
+        </fieldset>
+        </form>
+    </td>
+
+    <td>
+        <h3>Выпадающий и мульти списки:</h3>
+        <form action="https://fe.it-academy.by/TestForm.php" method="post">
+        <fieldset>
+        <legend>Города РБ</legend>
+        <select name="Town" id="list">
+            <option value="Brest">Брест</option>
+            <option value="Minsk">Минск</option>
+            <option value="Homel">Гомель</option>
+            <option value="Vitebsk">Витебск</option>
+        </select>
+
+        <select name="Town[]" size="5" multiple id="list">
+            <optgroup label="Города РБ">Города РБ
+                <option value="Brest">Брест</option>
+                <option value="Minsk">Минск</option>
+                <option value="Homel">Гомель</option>
+                <option value="Vitebsk">Витебск</option>
+            </optgroup>
+            <optgroup label="Города РФ">Города РФ
+                <option value="Moskow">Москва</option>
+                <option value="Piter">Питер</option>
+                <option value="Omsk">Омск</option>
+                <option value="Tver">Тверь</option>
+            </optgroup>
+        </select>
+        <button>Ок</button>
+        </fieldset>
+        </form>
+    </td>
+
+</tr>
+
+<tr>
+    <td>
+        <h3>Загрузка файла на сервер:</h3>
+        <form action="https://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Upload</legend>
+                <p>Файл</p>
+                <input type="file" name="file">
+                <p>Срок хранения (года):</p>
+                <input type="number" name="save for">
+                <button>Загрузить</button>
+            </fieldset>
+
+        </form>
+    </td>
+
+    <td>
+        <h3>Валидация данных HTML5:</h3>
+        <form action="https://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Строка поиска</legend>
+                <input type="text" pattern="[А-Яа-яЁё ]+" name="search" placeholder="только русские буквы">
+                <pre>Телефонный номер в формате
++ХХХ-ХХ-ХХХХХХХ, где Х - любое число</pre>
+                <input type="tel" maxlength="15" name="phone_nomber">
+                <button>Проверить</button>
+            </fieldset>
+        </form>
+    </td>
+</tr>
+</table>
+
+
+</body>
+</html>
