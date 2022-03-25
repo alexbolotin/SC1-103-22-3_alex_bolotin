@@ -1,0 +1,33 @@
+.ul_1{
+    list-style-image:none;
+    list-style-type: upper-roman;
+}
+
+.ul_2{
+    list-style-image:none;
+    list-style-type: lower-roman;
+    width: 350px;
+}
+
+.div_1{
+    background: black;
+    height: 4em;
+    max-width: 400px;
+    float: left;
+    color: green;
+    overflow: hidden;
+}
+
+.div_2{
+    background: black;
+    height: 5em;
+    width: 375px;
+    float: left;
+    color: green;
+    overflow: scroll;
+    
+}
+
+pre{
+    margin: 0px;
+}
