@@ -46,3 +46,64 @@
     border: solid none;
     float: left; 
 }
+
+
+.card_1_1{
+    background-image: url('cards.png');
+    background-repeat: no-repeat;
+    background-position: -430px -1590px;
+    width: 142px;
+    height: 193px;
+    border: solid none;
+    float: left;
+    clear: both;
+}
+
+.card_2_1{
+    background-image: url('cards.png');
+        background-repeat: no-repeat;
+        background-position: 1px -1789px;
+        width: 142px;
+        height: 193px;
+        border: solid none;
+        float: left;
+        margin-left: -75px;
+        margin-top: 70px;
+        
+}
+
+.card_3_1{
+    background-image: url('cards.png');
+    background-repeat: no-repeat;
+    background-position: -287px -1391px;
+    width: 142px;
+    height: 193px;
+    border: solid none;
+    float: left;
+        margin-left: -75px;
+        margin-top: 130px;
+}
+
+.card_4_1{
+    background-image: url('cards.png');
+    background-repeat: no-repeat;
+    background-position: -142px -2187px;
+    width: 142px;
+    height: 193px;
+    border: solid none;
+    float: left;
+        margin-left: -75px;
+        margin-top: 190px;
+}
+
+.card_5_1{
+    background-image: url('cards.png');
+    background-repeat: no-repeat;
+    background-position: 1px -2385px;
+    width: 142px;
+    height: 193px;
+    border: solid none;
+    float: left;
+        margin-left: -75px;
+        margin-top: 250px;
+}
