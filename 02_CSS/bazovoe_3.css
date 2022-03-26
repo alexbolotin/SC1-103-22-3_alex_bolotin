@@ -43,8 +43,7 @@ body{background-color: rgb(247, 129, 129);}
 
 .vstavka{margin: -1.1em;}
 .vstavka_2{
-    height: auto;
-    width: auto;
+    height: 1px;
     margin: 10px;
     float: right;
     background-color: blue;
