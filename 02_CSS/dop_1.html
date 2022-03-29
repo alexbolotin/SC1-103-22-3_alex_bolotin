@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.method_1{
+    padding: 2em;
+    background-color: #ccc;
+    background-image: url(DZ_1/b-r.gif), url(DZ_1/b-l.gif), url(DZ_1/t-l.gif), url(DZ_1/t-r.gif), url(DZ_1/l.gif), url(DZ_1/r.gif), url(DZ_1/t.gif), url(DZ_1/b.gif);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-y, repeat-y, repeat-x, repeat-x;
+    background-position: bottom right, bottom left, top left, top right, left, right, top, bottom;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.method_2{
+    padding: 3em;
+    background-color: #ccc;
+    background-image: url(DZ_1/r-b_2.png), url(DZ_1/l-b_2.png), url(DZ_1/l-t_2.png), url(DZ_1/r-t_2.png), url(DZ_1/l_2.png), url(DZ_1/r_2.png), url(DZ_1/t_2.png), url(DZ_1/b_2.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-y, repeat-y, repeat-x, repeat-x;
+    background-position: bottom right, bottom left, top left, top right, left, right, top, bottom;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.method_3{
+    background-color: bisque;
+    border-style: solid;
+    border-image-source: url("DZ_1/ramka.png");
+    border-image-slice: 30%;
+    border-width: 4em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.method_4{
+    padding:3em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    background: 
+    url(DZ_1/b-r.gif) no-repeat bottom right,
+    url(DZ_1/b-l.gif) no-repeat bottom left,
+    url(DZ_1/t-r.gif) no-repeat top right,
+    url(DZ_1/t-l.gif) no-repeat top left,
+    url(DZ_1/l.gif) repeat-y left,
+    url(DZ_1/r.gif) repeat-y right,
+    url(DZ_1/t.gif) repeat-x top,
+    url(DZ_1/b.gif) repeat-x bottom;
+    
+    
+}
+</style>
+
+</head>
+<body>
+
+<div class="method_1"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sint eveniet aliquam fugit pariatur. Repellendus cupiditate quos repellat debitis doloribus.</p></div>
+
+<div class="method_2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero nesciunt ipsa maiores illo accusamus maxime tempore, veritatis consequuntur consectetur sunt!</div>
+
+<div class="method_3"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sint eveniet aliquam fugit pariatur. Repellendus cupiditate quos repellat debitis doloribus.</p></div>
+
+<div class="method_4"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sint eveniet aliquam fugit pariatur. Repellendus cupiditate quos repellat debitis doloribus.</p></div>
+
+
+
+
+<div style="background: url(DZ_1/l.gif) repeat-y left">
+    <div style="background: url(DZ_1/r.gif) repeat-y right">
+        <div style="background: url(DZ_1/t.gif) repeat-x top">
+            <div style="background: url(DZ_1/b.gif) repeat-x bottom">
+                <div style="background: url(DZ_1/b-r.gif) no-repeat bottom right">
+                    <div style="background: url(DZ_1/b-l.gif) no-repeat bottom left">
+                        <div style="background: url(DZ_1/t-r.gif) no-repeat top right">
+                            <div style="background: url(DZ_1/t-l.gif) no-repeat top left">
+                                <div style="padding: 2em">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus at nulla ipsa corrupti molestias quos blanditiis sapiente sed odit quibusdam nesciunt saepe, quod ab ullam sit cupiditate fugiat ex tenetur!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

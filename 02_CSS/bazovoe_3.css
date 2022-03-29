@@ -1,51 +1,42 @@
 .navi{
     width: 15em;
-    height: 482px;
     background-color: rgb(197, 197, 197);
     float: left;
-    white-space: pre-wrap;
+    
 }
 
 .st_1{
-    width: 100%;
-    height: 200px;
+    
     background-color: grey;
     margin-bottom: 0.1em;
+    overflow: hidden;
+    margin left:15em;
 }
 
 .st_2{
-    width: 100%;
-    height: 280px;
+   
     background-color: grey;
-    margin-bottom: 0.1em;
+    margin-bottom:-0.9em;
+    margin-left: 15em;
+    overflow: hidden;
+    margin-top: 0.2em;
 }
 
-.pre{
-   white-space: pre-wrap;
-}
 
 .footer{
     background-color: grey;
-    margin-bottom: 0.1em;
-    width: 100%;
+    margin-top:1.2em;
 }
+
+}
+
+.vstavka{height: 1em;}
 
 .img{
-background:url(email.png) no-repeat;
-background-size:100%;
-width:50px;
-height:50px;
-float: right;
-clear: both;
-
-}
-body{background-color: rgb(247, 129, 129);}
-
-.vstavka{margin: -1.1em;}
-.vstavka_2{
-    height: 1px;
-    margin: 10px;
     float: right;
-    background-color: blue;
-    clear: both;
+    margin:1.5em;
+}
+
+.back{
+    background-color: rgb(167, 163, 163);
 }
