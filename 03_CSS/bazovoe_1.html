@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1.css" media="screen">
+    <title>Document</title>
+    <style>
+      div.MenuLevel1 { 
+        width:auto;
+        text-align: left;
+        font
+        
+      }
+      .marg{
+        float: left;
+        width: 100px; 
+        height: 20px;
+      }
+      div.MenuLevel1 > div { 
+        background-color:#cccccc; 
+        border: 3px solid #979797;
+        border-radius: 8px;
+        position: relative; 
+        cursor: pointer 
+        
+      }
+      div.MenuLevel2 {
+         width: 150px; 
+         display: none;
+         
+        }
+      div.MenuLevel2 > div { 
+        background-color:#cccccc; 
+        border: 3px solid #979797;
+        border-radius: 8px;
+        cursor: pointer 
+      }
+      div.MenuLevel1 > div:hover div.MenuLevel2 { 
+        display: block; 
+        position: relative;
+        top: 5px;
+        left: -3px;
+        z-index: 1 
+      }
+      .marg:hover{background-color: #787878;}
+
+      @media all and (max-width: 651px){
+        .marg{ 
+            float:none;        
+        }
+        div.MenuLevel1 > div:hover div.MenuLevel2{
+        display: block; 
+        position: relative;
+        top: -20px;
+        left: 100px;
+        z-index: 1 
+        }
+      }
+  </style>
+</head>
+<body>
+      
+
+<div class='MenuLevel1'>
+    <div class="marg">Понедельник
+      <div class='MenuLevel2'>
+        <div>Завтрак</div>
+        <div>Обед</div>
+        <div>Ужин</div>
+    </div>
+    </div>
+    
+    <div class="marg">
+        Вторник
+        <div class='MenuLevel2'>
+            <div>Завтрак</div>
+            <div>Обед</div>
+            <div>Ужин</div>
+        </div>
+    </div>
+
+    <div class="marg">Среда
+      <div class='MenuLevel2'>
+        <div>Завтрак</div>
+        <div>Обед</div>
+        <div>Ужин</div>
+    </div>
+    </div>
+    <div class="marg">Четверг
+      <div class='MenuLevel2'>
+        <div>Завтрак</div>
+        <div>Обед</div>
+        <div>Ужин</div>
+    </div>
+    </div>
+    <div class="marg">Пятница
+      <div class='MenuLevel2'>
+        <div>Завтрак</div>
+        <div>Обед</div>
+        <div>Ужин</div>
+    </div>
+    </div>
+    <div class="marg">Суббота
+      <div class='MenuLevel2'>
+        <div>Завтрак</div>
+        <div>Обед</div>
+        <div>Ужин</div>
+    </div>
+    </div>
+
+</div>
+
+</body>
+</html>
