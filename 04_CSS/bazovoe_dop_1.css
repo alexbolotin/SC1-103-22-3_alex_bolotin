@@ -1,0 +1,27 @@
+body{
+    margin: 1em
+  }
+  
+  .div_1{
+  border: 2px solid #0E3752;
+  border-radius: 0px 15px 0px 15px;
+  padding: 2em;
+  }
+  .div_2{
+  border: 2px solid #0E3752;
+  border-radius: 0px 15px 0px 15px;
+  padding: 2em;
+  }
+  
+  .div_3{
+  border: 2px solid #0E3752;
+  border-radius: 0px 15px 0px 15px;
+  padding: 2em;
+  }
+  .doc::before{
+  content: url(doc.png);
+  }
+  
+  .format_word::after{ content: url(word.png);}
+  .format_pdf::after{ content: url(pdf.png);}
+  .format_zip::after{ content: url(zip.png);}

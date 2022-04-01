@@ -1,0 +1,43 @@
+table{
+    font-size: medium;
+    text-align: left;
+    table-layout: fixed;
+    margin: auto;
+    margin-top: 5em;
+}
+.th_top{
+background-color: grey;
+}
+.th_1_lvl{
+    border-bottom-style: dotted;
+    border-right-style: dotted;
+}
+.th_1_lvl_last{
+    border-bottom-style: dotted;
+}
+.th_1{
+    border-style:dotted
+}
+.sex{
+    border-bottom-style: dotted;
+    border-right-style: dotted;
+    align="left";
+}
+.th_3{
+    border-bottom-style: dotted;
+    border-right-style: dotted;
+}
+.th_4{
+    border-bottom-style: dotted;
+    border-right-style: dotted;
+}
+.th_5{
+    border-bottom-style: dotted;
+    border-right-style: dotted;
+}
+.last{
+    text-align: center;
+}
+.hover_1:hover{
+    background-color: rgb(110, 148, 148);
+    }

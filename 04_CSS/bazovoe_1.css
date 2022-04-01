@@ -1,0 +1,33 @@
+
+body{
+    margin: 1em
+}
+
+.div_1{
+border: 2px solid #0E3752;
+border-radius: 0px 15px 0px 15px;
+padding: 2em;
+}
+
+.div_2{
+border: 2px solid #0E3752;
+border-radius: 0px 15px 0px 15px;
+padding: 2em;
+}
+
+.div_3{
+border: 2px solid #0E3752;
+border-radius: 0px 15px 0px 15px;
+padding: 2em;
+}
+
+.doc_1{display: none; }
+
+.doc:hover+img{display: inline;}
+
+.format{ float: left;}
+
+.format_1{ display: none; float: left;}
+
+.format:hover+div{display: block;}
+

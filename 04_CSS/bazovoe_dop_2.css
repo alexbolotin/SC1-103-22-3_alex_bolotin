@@ -1,0 +1,34 @@
+table{
+    height: 500px;
+    width: 500px;
+    table-layout: fixed;
+    margin: auto;
+    margin-top: 5em;
+    border-collapse: collapse
+}
+tr,td{border: 2px solid black;border-collapse: collapse}
+
+   
+.chess tr:nth-child(odd) td:nth-child(odd) {
+background: black;
+color:white;
+}	
+
+.chess tr:nth-child(even) td:nth-child(even) {
+background: black;
+color:white;
+}
+
+table {
+    counter-reset: heading 65; /* Инициируем счетчик */
+    text-align: center;
+  }
+ 
+td:before {
+    counter-increment: heading -1; /* Указываем идентификатор счетчика */
+    content: counter(heading); /* Выводим текст перед содержимым тега <h2> */
+    font-size: 2em;
+   
+  }
+
+  
